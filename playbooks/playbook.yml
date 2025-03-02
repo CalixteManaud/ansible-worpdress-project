@@ -1,0 +1,14 @@
+---
+- name: Deploy WordPress
+  hosts: target
+  become: true
+  collections:
+    - ynov.general
+  vars_files:
+    - ynov/general/roles/wordpress/default/main.yml
+
+  roles:
+    - ynov.general.post_installation
+    - ynov.general.web_server
+    - ynov.general.mariadb
+    - ynov.general.wordpress

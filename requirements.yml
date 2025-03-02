@@ -1,0 +1,5 @@
+---
+collections:
+  - name: ynov.general
+    source: https://github.com/CalixteManaud/ansible-collection-ynov
+    type: git
